@@ -154,7 +154,6 @@ let adminDomains = [],
 
 let db
 const loadData = async () => {
-  startServer()
   db = client.db(DB_NAME)
 
   // variables to implement core functionality
@@ -181,7 +180,7 @@ const loadData = async () => {
   chatIdOf = db.collection('chatIdOf')
 
   log(`DB Connected lala. May peace be with you and Lord's mercy and blessings.`)
-
+  startServer()
   // buyDomainFullProcess(466590684, 'unlock-userid02.com')
 
 
