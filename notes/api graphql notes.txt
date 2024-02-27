@@ -1,0 +1,81 @@
+query project {
+    project(id: "b4824a47-d12b-4cf7-8e8d-ac2d7bfc0e56") {
+      id
+      name
+      plugins {
+        edges {
+          node {
+            id
+            name
+          }
+        }
+      }
+      environments {
+        edges {
+          node {
+            id
+            name
+          }
+        }
+      }
+      services {
+        edges {
+          node {
+            id
+            name
+            deployments {
+              edges {
+                node {
+                  id
+                  status
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+GraphQL Response: {
+  "data": {
+    "project": {
+      "id": "b4824a47-d12b-4cf7-8e8d-ac2d7bfc0e56",
+      "name": "proper-book",
+      "plugins": {
+        "edges": []
+      },
+      "environments": {
+        "edges": [
+          {
+            "node": {
+              "id": "beba5254-5c21-40e4-9520-96aa644654c0",
+              "name": "production"
+            }
+          }
+        ]
+      },
+      "services": {
+        "edges": [
+          {
+            "node": {
+              "id": "945d993f-a8af-40cb-982d-2b0f37a791c4",
+              "name": "tg-bot-link-shorten",
+              "deployments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "dcc5a0f6-186e-4ac1-911f-07ca010550c1",
+                      "status": "SUCCESS"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

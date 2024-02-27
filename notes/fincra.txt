@@ -1,0 +1,326 @@
+on test fincra setup, post, https://url/webhook received: 
+turtle-allowed-ladybug.ngrok-free.app/webhook
+post webhook {} {
+  "event": "charge.successful",
+  "data": {
+    "id": 560362,
+    "authorization": {
+      "mode": null,
+      "redirect": null,
+      "metadata": null
+    },
+    "auth_model": null,
+    "amount": 100,
+    "amountReceived": 70,
+    "currency": "NGN",
+    "fee": 1.05,
+    "vat": 0.07,
+    "message": "",
+    "status": "success",
+    "reference": "two_tx__70",
+    "description": "checkout",
+    "type": "bank_transfer",
+    "customer": {
+      "name": "Name is M",
+      "email": "softmuneeb@gmail.com",
+      "phoneNumber": null
+    },
+    "metadata": {},
+    "settlementDestination": "wallet",
+    "virtualAccount": {
+      "bankName": "globus",
+      "id": "654239209e2cb320d93c7955",
+      "bankCode": "103",
+      "accountName": "Blue Space Technology LTD",
+      "accountNumber": "3997178583",
+      "sessionId": "090267231101124222876010106558",
+      "channelName": "globus",
+      "payerAccountNumber": "3000002151",
+      "payerAccountName": "RICHARD OLUWAROTIMI ADEBAYO",
+      "payerBankName": "Kuda Microfinance Bank",
+      "payerBankCode": null,
+      "expiresAt": "2023-11-01T12:00:17.000Z",
+      "business": "64c95e7366ea9f0b4a98dc2e"
+    },
+    "amountToSettle": 68.9465,
+    "chargeReference": "fcr-bt-e5129104f98a967fa"
+  }
+}
+turtle-allowed-ladybug.ngrok-free.app/webhook
+post webhook {} {
+  "event": "charge.successful",
+  "data": {
+    "id": 560363,
+    "authorization": {
+      "mode": null,
+      "redirect": null,
+      "metadata": null
+    },
+    "auth_model": null,
+    "amount": 100,
+    "amountReceived": 130,
+    "currency": "NGN",
+    "fee": 1.96,
+    "vat": 0.14,
+    "message": "",
+    "status": "success",
+    "reference": "two_tx__130",
+    "description": "checkout",
+    "type": "bank_transfer",
+    "customer": {
+      "name": "Name is M",
+      "email": "softmuneeb@gmail.com",
+      "phoneNumber": null
+    },
+    "metadata": {},
+    "settlementDestination": "wallet",
+    "virtualAccount": {
+      "bankName": "globus",
+      "id": "654239ae9e2cb3742a3c79af",
+      "bankCode": "103",
+      "accountName": "Blue Space Technology LTD",
+      "accountNumber": "3999341942",
+      "sessionId": "090267231101124307187010106558",
+      "channelName": "globus",
+      "payerAccountNumber": "3000002151",
+      "payerAccountName": "RICHARD OLUWAROTIMI ADEBAYO",
+      "payerBankName": "Kuda Microfinance Bank",
+      "payerBankCode": null,
+      "expiresAt": "2023-11-01T12:02:38.000Z",
+      "business": "64c95e7366ea9f0b4a98dc2e"
+    },
+    "amountToSettle": 128.0435,
+    "chargeReference": "fcr-bt-260dc3ee3ef7908fb"
+  }
+}
+
+
+on test fincra setup, post, https://url/webhook received: 
+{
+  "event": "charge.successful",
+  "data": {
+    "id": 16430,
+    "authorization": { "mode": null, "redirect": null, "metadata": null },
+    "auth_model": null,
+    "amount": 100,
+    "amountReceived": 100,
+    "currency": "NGN",
+    "fee": 1.51,
+    "vat": 0.11,
+    "message": "",
+    "status": "success",
+    "reference": "tx_7",
+    "description": "checkout",
+    "type": "bank_transfer",
+    "customer": { "name": "Name is M", "email": "softmuneeb@gmail.com", "phoneNumber": null },
+    "metadata": {},
+    "settlementDestination": "wallet",
+    "virtualAccount": {
+      "bankName": "Globus Bank",
+      "id": "6537dcfc73cbd5040d51fd5d",
+      "bankCode": "000027",
+      "accountName": "Fincra Checkout",
+      "accountNumber": "3242720975",
+      "sessionId": null,
+      "channelName": null,
+      "payerAccountNumber": null,
+      "payerAccountName": null,
+      "payerBankName": null,
+      "payerBankCode": null,
+      "expiresAt": "2023-11-01T11:42:27.000Z",
+      "business": "63da866cb938c4e0b871f514"
+    },
+    "amountToSettle": 98.5,
+    "chargeReference": "fcr-bt-db997a568de9b26e9"
+  }
+}
+
+
+
+Works only on production credentials, not on test credentials
+
+https://${FINCRA_ENDPOINT}/checkout/payments/merchant-reference/${reference}
+
+{
+  status: true,
+  message: 'Payment details fetched',
+  data: {
+    id: 448212,
+    businessId: '64c95e7366ea9f0b4a98dc2e',
+    paymentLinkId: null,
+    amount: 1,
+    currency: 'NGN',
+    convertedAmount: 1,
+    convertedCurrency: 'NGN',
+    paymentMethods: [ 'bank_transfer', 'card' ],
+    defaultPaymentMethod: 'bank_transfer',
+    redirectUrl: 'https://turtle-allowed-ladybug.ngrok-free.app/health?a=b&ref=tx_1',
+    customUrl: null,
+    successMessage: null,
+    settlementDestination: 'wallet',
+    feeBearer: 'business',
+    reference: 'fcr-p-b04ee29cc9',
+    merchantReference: 'tx_2',
+    isDisabled: false,
+    metadata: null,
+    status: 'pending',
+    createdAt: '2023-11-01T10:13:40.670Z',
+    updatedAt: '2023-11-01T10:13:40.000Z',
+    customer: { name: 'Name is Bilal', email: 'a@a.com', phoneNumber: null },
+    business: []
+  }
+}
+
+
+{
+  url: {
+    status: true,
+    message: 'Payment details fetched',
+    data: {
+      id: 431617,
+      businessId: '64c95e7366ea9f0b4a98dc2e',
+      paymentLinkId: null,
+      amount: 8860.75,
+      currency: 'NGN',
+      convertedAmount: 8860.75,
+      convertedCurrency: 'NGN',
+      paymentMethods: [Array],
+      defaultPaymentMethod: 'bank_transfer',
+      redirectUrl: 'https://nomadly-production.up.railway.app/bank-payment-for-subscription',
+      customUrl: null,
+      successMessage: null,
+      settlementDestination: 'wallet',
+      feeBearer: 'business',
+      reference: 'fcr-p-0a318c6b1a',
+      merchantReference: 'Q3R8a',
+      isDisabled: false,
+      metadata: null,
+      status: 'expired',
+      createdAt: '2023-09-29T22:32:59.896Z',
+      updatedAt: '2023-09-29T23:05:00.000Z',
+      customer: [Object],
+      business: [Object]
+    }
+  }
+}
+mzk@mzk tg-bot-link-shorten % node "/Users/mzk/Desktop/tg-bot-link-shorten/fincra.js"
+{
+  status: true,
+  message: 'Payment details fetched',
+  data: {
+    id: 431617,
+    businessId: '64c95e7366ea9f0b4a98dc2e',
+    paymentLinkId: null,
+    amount: 8860.75,
+    currency: 'NGN',
+    convertedAmount: 8860.75,
+    convertedCurrency: 'NGN',
+    paymentMethods: [ 'bank_transfer', 'card' ],
+    defaultPaymentMethod: 'bank_transfer',
+    redirectUrl: 'https://nomadly-production.up.railway.app/bank-payment-for-subscription',
+    customUrl: null,
+    successMessage: null,
+    settlementDestination: 'wallet',
+    feeBearer: 'business',
+    reference: 'fcr-p-0a318c6b1a',
+    merchantReference: 'Q3R8a',
+    isDisabled: false,
+    metadata: null,
+    status: 'expired',
+    createdAt: '2023-09-29T22:32:59.896Z',
+    updatedAt: '2023-09-29T23:05:00.000Z',
+    customer: {
+      name: 'VerifiedThomas0 test name',
+      email: 'kirkolseen@gmail.com',
+      phoneNumber: null
+    },
+    business: []
+  }
+}
+
+
+
+
+
+query: await fincra.business.getBusinessId()
+ans: {
+  success: true,
+  message: 'Merchant details fetched successfully',
+  data: {
+    accessAllFeatures: false,
+    _id: '64c95e7366ea9fd59298dc2a',
+    userId: '64c95e7266ea9f297398dc28',
+    name: 'Richard Adebayo',
+    email: 'richard@bluespaced.com',
+    country: 'NG',
+    logo: '7064588256',
+    createdAt: '2023-08-01T19:35:15.042Z',
+    updatedAt: '2023-08-01T19:35:15.740Z',
+    business: { id: '64c95e7366ea9f0b4a98dc2e', businessKey: 'B-yH5vydrTyWtU' }
+  }
+}
+reference: https://github.com/E-wave112/fincra-node-sdk#get-business-details
+
+
+
+
+
+
+
+https://softgreen.sbs/save-payment-blockbee?reference=fcr-p-a4283c33f9
+
+test cards https://docs.fincra.com/docs/testing-your-integration
+
+{
+    "success": true,
+    "message": "Thank you, Richard Adebayo. A NGN virtual account has been created for you",
+    "data": {
+        "status": "approved",
+        "isActive": true,
+        "accountNumber": "7946735423",
+        "merchantReference": "55667788",
+        "KYCInformation": {
+            "businessName": "FIN-Blue Space Technology LTD",
+            "email": "richard@bluespaced.com"
+        },
+        "accountInformation": {
+            "accountNumber": "7946735423",
+            "accountName": "FIN-Blue Space Technology LTD",
+            "bankName": "wema",
+            "bankCode": "035",
+            "reference": "7ab8016b-2009-4ee4-87c1-0351bde7d895"
+        },
+        "verifiedKYCData": null,
+        "note": null,
+        "accountOpeningFee": 0,
+        "pendingAdditionalInfoCount": 0,
+        "isPermanent": false,
+        "expiresAt": "2023-09-04T16:15:03.155Z",
+        "isCheckoutVa": false,
+        "isBankTransferVa": true,
+        "isSuspended": false,
+        "reason": null,
+        "monthlyVolume": null,
+        "entityName": null,
+        "paymentFlowDescription": null,
+        "attachments": [],
+        "meansOfId": [],
+        "bankStatement": [],
+        "utilityBill": [],
+        "virtualAccountType": "additional",
+        "riskRating": null,
+        "checklist": null,
+        "riskScreening": null,
+        "channelKycUpdateStatus": null,
+        "channelKycUpdateResponse": null,
+        "_id": "64f5f477d14b5e1dc678f146",
+        "business": "64c95e7366ea9f0b4a98dc2e",
+        "currency": "NGN",
+        "accountType": "corporate",
+        "entityType": "main_account",
+        "currencyType": "fiat",
+        "amount": 100,
+        "createdAt": "2023-09-04T15:15:03.158Z",
+        "updatedAt": "2023-09-04T15:15:03.158Z"
+    }
+}

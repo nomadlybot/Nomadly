@@ -1,0 +1,365 @@
+get-dns-records.js"      
+API Response: {
+  responseMsg: { message: 'List viewed', id: 0, statusCode: 200 },
+  responseData: [
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'softlink.sbs',
+      recordType: 'SOA',
+      recordContent: '8307.dns1.managedns.org hello@ivrpod.com 2023090107 10800 3600 604800 3600',
+      recordTTL: 3600,
+      dnszoneRecordID: 1112759357,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1693553759000,
+      isLocked: 1,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    },
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'softlink.sbs',
+      recordType: 'NS',
+      recordContent: '8307.dns1.managedns.org',
+      recordTTL: 3600,
+      dnszoneRecordID: 1112759358,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1693553759000,
+      isLocked: 1,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    },
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'softlink.sbs',
+      recordType: 'NS',
+      recordContent: '8307.dns2.managedns.org',
+      recordTTL: 3600,
+      dnszoneRecordID: 1112759359,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1693553759000,
+      isLocked: 1,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    },
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'softlink.sbs',
+      recordType: 'NS',
+      recordContent: '8307.dns3.managedns.org',
+      recordTTL: 3600,
+      dnszoneRecordID: 1112759360,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1693553759000,
+      isLocked: 1,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    },
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'softlink.sbs',
+      recordType: 'NS',
+      recordContent: '8307.dns4.managedns.org',
+      recordTTL: 3600,
+      dnszoneRecordID: 1112759361,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1693553759000,
+      isLocked: 1,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    },
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'softlink.sbs',
+      recordType: 'A',
+      recordContent: '103.173.197.50',
+      recordTTL: 24000,
+      dnszoneRecordID: 1112759505,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1693568207000,
+      isLocked: 0,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    },
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'www.softlink.sbs',
+      recordType: 'A',
+      recordContent: '103.173.197.50',
+      recordTTL: 24000,
+      dnszoneRecordID: 1112759506,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1693568207000,
+      isLocked: 0,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    },
+    {
+      recordPort: null,
+      recordWeieght: null,
+      recordName: 'softlink.sbs',
+      recordType: 'CNAME',
+      recordContent: '1aj9h7mx.up.railway.app',
+      recordTTL: 30,
+      dnszoneRecordID: 1112765460,
+      dnszoneID: 150663,
+      recordPriority: null,
+      recordChangeDate: 1694775623000,
+      isLocked: 0,
+      isDelete: 0,
+      statusID: 1,
+      statusName: 'Active',
+      priority: null
+    }
+  ]
+}
+
+
+
+mzk@mzk tg-bot-link-shorten % node "/Users/mzk/Desktop/tg-bot-link-shorten/register-domain.test.js"
+buyDomain Response: {
+  "responseMsg": {
+    "message": "Domain Registration Failed(Invalid Nameservers or Invalid Authcode)",
+    "id": 0,
+    "statusCode": 404
+  },
+  "responseData": [
+    {
+      "message": "Contact already exists for contact id 184210 for domain softmuneeb.us!",
+      "id": 0,
+      "statusCode": 2302
+    }
+  ]
+}
+Issue in buying domain Domain Registration Failed(Invalid Nameservers or Invalid Authcode)
+mzk@mzk tg-bot-link-shorten % node "/Users/mzk/Desktop/tg-bot-link-shorten/register-domain.test.js"
+buyDomain Response: {
+  "responseMsg": {
+    "message": "Domain registered successfully",
+    "id": 0,
+    "statusCode": 200
+  },
+  "responseData": [
+    {
+      "domainCreateResponse": {
+        "creationDate": "2023-10-03 13:23:38",
+        "expiryDate": "2024-10-03 13:23:38",
+        "msg": "Command completed successfully",
+        "msgCode": 1000,
+        "name": "softmuneeb.us"
+      },
+      "contactsCreateRS": [
+        {
+          "message": "Contact Created Successfully for contact id OR_267766 for domain softmuneeb.us!",
+          "id": 0,
+          "statusCode": 1000
+        }
+      ],
+      "hostsCreateRS": [],
+      "error": null,
+      "sedoMsg": null
+    }
+  ]
+}
+
+
+{
+  "responseMsg": {
+    "message": "Domain Available for Registration",
+    "id": 0,
+    "statusCode": 200
+  },
+  "responseData": {
+    "domainCheckResponce": [
+      {
+        "available": true,
+        "msg": "Command completed successfully.",
+        "msgCode": 1000,
+        "name": "bush.sbs",
+        "reason": null,
+        "costPrice": 0,
+        "creationFee": 24,
+        "renewalFee": 24,
+        "creationSellFee": 34,
+        "renewalSellFee": 34,
+        "premiumCategory": null,
+        "premium": false,
+        "registryPremium": true,
+        "creationfee": 0
+      }
+    ],
+    "errorList": []
+  }
+}
+
+checkDomainPriceOnline {
+  "responseMsg": {
+    "message": "Domain Available for Registration",
+    "id": 0,
+    "statusCode": 200
+  },
+  "responseData": {
+    "domainCheckResponce": [
+      {
+        "available": true,
+        "msg": "Command completed successfully.",
+        "msgCode": 1000,
+        "name": "bush.sbs",
+        "reason": null,
+        "costPrice": 0,
+        "creationFee": 24,
+        "renewalFee": 24,
+        "creationSellFee": 34,
+        "renewalSellFee": 34,
+        "premiumCategory": null,
+        "premium": false,
+        "registryPremium": true,
+        "creationfee": 0
+      }
+    ],
+    "errorList": []
+  }
+} 
+
+
+
+
+1. API checkDomain
+https://api.connectreseller.com/ConnectReseller/ESHOP/checkDomain?APIKey=${apiKey}&websiteName=${domainName}
+{
+  responseMsg: {
+    message: 'Domain Available for Registration',
+    id: 0,
+    statusCode: 200
+  },
+  responseData: null
+}
+
+
+2. API SearchDomainList:
+https://api.connectreseller.com/ConnectReseller/ESHOP/SearchDomainList?APIKey=${API_KEY}&page=1&maxIndex=100
+{
+  totalCount: 1,
+  records: [
+    {
+      entryId: 1917472,
+      domainName: 'netzenatest.sbs',
+      customerName: null,
+      resellerName: null,
+      expirationDate: 1723177436000,
+      creationDate: 1691555036000,
+      actionStatus: true,
+      statusName: 'Active',
+      statusId: 8,
+      resellerId: 12122,
+      customerId: 157421,
+      authInfo: null,
+      description: null,
+      contactId: null,
+      actionDate: null,
+      batchId: null,
+      transactionId: null,
+      suspendedByAdminFlag: false,
+      tldId: null,
+      tldName: null,
+      count: null,
+      suspendedByResellerFlag: false,
+      lockedByAdminFlag: false,
+      lockedByResellerFlag: false
+    }
+  ]
+}
+
+3. API UpdateNameServer
+https://api.connectreseller.com/ConnectReseller/ESHOP/UpdateNameServer?APIKey=${apiKey}&domainNameId=${domainNameId}&websiteName=${websiteName}&nameServer1=${nameServer1}&nameServer2=${nameServer2}
+Error updating name server.  Request failed with status code 400
+
+
+4. ViewDomain
+https://api.connectreseller.com/ConnectReseller/ESHOP/ViewDomain?APIKey=${API_KEY}&websiteName=${domainName}
+Domain Details: {
+  responseMsg: {
+    message: 'Domain softlemon.sbs is available ',
+    id: 0,
+    statusCode: 200
+  },
+  responseData: {
+    domainNameId: 1945623,
+    websiteName: 'softlemon.sbs',
+    orderDate: 1693484074000,
+    creationDate: 1693484074000,
+    lastUpdatedDate: 1693484074000,
+    expirationDate: 1725106474000,
+    nameserver1: null,
+    nameserver2: null,
+    nameserver3: null,
+    nameserver4: null,
+    nameserver5: null,
+    nameserver6: null,
+    nameserver7: null,
+    nameserver8: null,
+    nameserver9: null,
+    nameserver10: null,
+    nameserver11: null,
+    nameserver12: null,
+    nameserver13: null,
+    status: 'Active',
+    authCode: 'auth@43699db8A5re',
+    isDomainLocked: false,
+    isThiefProtected: true,
+    isPrivacyProtection: true,
+    isParked: false,
+    customerId: 150106,
+    registrantContactId: 'OR_184210',
+    adminContactId: 'OR_184210',
+    technicalContactId: 'OR_184210',
+    billingContactId: 'OR_184210',
+    isRegistrantVerification: false,
+    registrantVerificationDate: null,
+    websiteId: 1932872,
+    dnszoneStatus: 1,
+    dnszoneId: 150615
+  }
+}
+
+5. AddDNSRecord
+https://api.connectreseller.com/ConnectReseller/ESHOP/AddDNSRecord?APIKey=nJW0XHJEqWknD8b&DNSZoneID=00&RecordName=host.example.com&RecordType=A&RecordValue=recordvalue&RecordPriority=0&RecordTTL=43200
+{
+  "responseMsg": {
+    "message": "DNS Management Successfully Enabled",
+    "id": 0,
+    "statusCode": 200
+  },
+  "responseData": {
+    "message": "Records ADDED Successfully ",
+    "id": 1112759306,
+    "statusCode": 200
+  }
+}

@@ -1,0 +1,101 @@
+Milestone 2: Domain Selling Bot, (Note: 1 Day = 8 hours of Work, 1 Week = 5 Days of Work)
+
+X Website: 
+X 2 Days, Figma Design of Landing Page and Logo
+X 2 Days, Website Development of Landing Page, Wordpress 
+X = 4 Days (Total) = 30 hours * $20 per hour = $600 = $200 (Client Agreed at)
+
+Update Features:
+X 2 Days Make full flows of following to lock the requirements (users can make money from selling validation)
+X 2 Days, Allow Subscriber to Get 2 Free .sbs Domain Names with their Plan
+X 2 Days, Free trial one time only per user, arc.com,She.com,Haujs.com, Hhahs.sbs, For example, those are the domain purchased by Admin. Free trial User 1 can select from that list but can only get 2 free shortlink but that will expire after 24 hours. Free trial first time only - shorten upto 2 links -  joined with domains bought by admin
+X 2 Days, DNS Status Alert - Update User when his dns records are updated - when any new domain is bought it will be checked every 5 minutes about dns status - if its okay then notify user "dns propagated success" other wise notify user that "checking dns status 4th time (or [X]th time), will update you shortly"
+In Progress ---  3 Days, User can update DNS records of domain, New flows to make for Create, Read, Update Delete Records
+= $1550 = $700 (Client Agreed at)
+
+New Features:
+
+Testing and Text Updates and New Wishes take alot time, so planning needs to be done good, like todays meeting,...
+2 Days Make Figma
+1 Days send message to all users + improve code base
+5 Days, Wallet Functionality (user can deposit into the wallet to pay for phone number validator or lead purchase)
+5 Days, Phone Number Validator (Pay-as-you-go), User can upload a file, or Paste Phone Numbers.
+5 Days, Buy Phone Number Leads (Pay-as-you-go), User can buy already validated phone numbers
+3 Days, Buy Generator
+
+3 Days, Crypto Incomplete Payment Flow Alert, If the amount paid is less than the required amount, the system alert, and the user can pay the remainder to the same address if possible and then get confirmation.
+
+make again, write functions apis names, estimate,
+unit test, 
+integration test, 
+smoke testing
+
+coupon code 
+wallet withdraw
+
+
+= $1650 = $800 (Client Agreed at)
+
+
+
+
+Total 21 working Days for Development, Testing, Meetings, Flow Changes on Client Demand, Code Improvements, Any ideas by Client.
+Discovery
+Design
+Implement dev
+QA
+PM meetings
+Demos
+
+ok ok ok ok ok ok ok ok ok ok ok ok ok ok
+
+
+
+Aoa, Anas, May Allah bless you with peace and mercy. I hope you are doing great! I am sharing my recent experience in the software development of a telegram chatbot that sells domain names and some more stuff.
+
+So, I made a nodejs app with memory variables to handle data so I can switch later to MongoDB (and should be able to switch back to memory variables easily). I found these issues when I switched the code base from memory variables to MongoDB:
+
+* 🚫 nameOf["123"] = "Anas", ✅ nameOf["123"] = {val: "Anas"} i.e Value of key must be an object only
+* 🚫 domainsSold["hello.com"] = {val: true}, ✅  domainsSold["hello@com"] = {val: true} 📝otherwise it will be considered as  { "hello": { "com":  {val: true} } } i.e The key values must not contain a dot "." otherwise it will be considered as a nested object 😂 for example if I store in db that collection
+* 🚫 nameOf[123] = {val: "Anas"}, ✅ nameOf["123"] = {val: "Anas"} i.e The key value of the objects should be a string so that I can edit values online in the mongo db dashboard
+* Use objects instead of arrays to keep lesser code to use db
+* so at the end the code for db has these methods only get, set, increment, decrement, getAll that can be used like for example get(nameOf, chatId),  get(domainsOf, chatId), increment(freeLinksUsed) etc. Nice and clean
+* Consult a developer like Anas to get a good advice before starting work!
+
+
+
+
+User: 😎 DNS Management
+
+Bot: Please select the domain you want to manage DNS
+
+User: glasso.sbs
+
+Bot:
+Here are DNS Records for glasso.sbs
+1. A Record: None
+2. NS1: 8307.dns1.managedns.org
+3. NS2: 8307.dns2.managedns.org
+4. CNAME: 6fo657pa.up.railway.app
+[Add DNS Record]
+[Update DNS Record]
+[Delete DNS Record]
+[Back] [Cancel]
+
+User: Add DNS Record
+
+Bot: Which record you want to add:
+
+User: NS
+
+Bot: Please provide NS record. i.e, 8307.dns1.managedns.org 
+
+User:  8307.dns3.managedns.org
+
+Bot:
+Here are DNS Records for glasso.sbs
+1. A Record: None
+2. NS1: 8307.dns1.managedns.org
+3. NS2: 8307.dns2.managedns.org
+4. NS3: 8307.dns2.managedns.org
+5. CNAME: 6fo657pa.up.railway.app

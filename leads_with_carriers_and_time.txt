@@ -1,0 +1,20 @@
+473084016 Telstra Corporation Ltd Sec: 3.422
+430181858 Vodafone Australia Pty Ltd Sec: 3.193
+423966790 Optus Networks Pty Ltd SingTel Sec: 2.798
+491468644 Telstra Corporation Ltd Sec: 2.454
+435896353 Optus Networks Pty Ltd SingTel Sec: 2.675
+455551532 Telstra Corporation Ltd Sec: 3.634
+430073432 Vodafone Australia Pty Ltd Sec: 2.426
+426027535 Vodafone Australia Pty Ltd Sec: 2.464
+429654008 Telstra Corporation Ltd Sec: 3.577
+429525263 Telstra Corporation Ltd Sec: 2.73
+433000277 Vodafone Australia Pty Ltd Sec: 2.778
+467491313 Telstra Corporation Ltd Sec: 2.86
+481344165 Optus Networks Pty Ltd (SingTel) Sec: 1.919
+473533774 Telstra Corporation Ltd Sec: 2.52
+430758524 Vodafone Australia Pty Ltd Sec: 2.788
+434398325 Optus Networks Pty Ltd SingTel Sec: 2.825
+498989388 Telstra Corporation Ltd Sec: 2.663
+485884854 Pivotel Satellite Pty Limited Sec: 2.727
+470165988 Telstra Corporation Ltd Sec: 2.797
+470304379 Telstra Corporation Ltd Sec: 2.452

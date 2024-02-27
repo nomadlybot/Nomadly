@@ -1,0 +1,21 @@
+bot.on('message') gives this:
+{
+  "message_id": 2640,
+  "from": {
+    "id": 6687923716,
+    "is_bot": false,
+    "first_name": "Tracker",
+    "last_name": "Cute",
+    "username": "CuteSoftChoco",
+    "language_code": "en"
+  },
+  "chat": {
+    "id": 6687923716,
+    "first_name": "Tracker",
+    "last_name": "Cute",
+    "username": "CuteSoftChoco",
+    "type": "private"
+  },
+  "date": 1695278200,
+  "text": "salam"
+}

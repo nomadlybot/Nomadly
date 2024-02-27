@@ -1,0 +1,207 @@
+1 oct 2023
+
+6251043632
+option1122q
+
+payment session error for crypto 
+
+/crypto-payment-for-domain?
+ref=ttX0a&
+address_in=3Ngg3MtXodXSbVwcWScPw9MNGkZXEfvYhW&
+address_out=1JH5TnZzjYTf1yYwBDLjWoHgkAcCHc1Do7&
+txid_in=08011935b714d57897da861657af85bc9c41fd9ba8eff2f70f582c43bf839e2a&
+txid_out=5041f0f0e238f3acf64d0e86455f14f0eeb18c7d51420cccc75b0f5b48a511c7&
+fee_coin=0.00000546&
+value_coin=0.000105&
+value_forwarded=9065&
+value_forwarded_coin=0.00009065&
+coin=btc&
+price=27004.8315418563&
+
+{
+  "action": "none",
+  "chosenPlanForPayment": "Daily",
+  "cryptoPaymentSession": {
+    "priceCrypto": "0.00037036",
+    "ticker": "btc",
+    "ref": "cguLF"
+  }
+}
+
+
+
+
+
+
+NODEJS Package:
+  const coin = 'polygon_matic';
+  const myAddress = ''; // auto gen by BB
+  const callbackUrl = 'https://softgreen.sbs/save-payment-blockbee';
+  const params = { chatId: '333' };
+  const blockbeeParams = {};
+{
+  address: '0x8b0FcFEb867A735fF6270785B7A176FF7e8c13BE',
+  data: {
+    status: 'success',
+    callback_url: 'https://softgreen.sbs/save-payment-blockbee?chatId=333',
+    address_in: '0x8b0FcFEb867A735fF6270785B7A176FF7e8c13BE',
+    address_out: '0x9a7221b5e32d5f99e8da95585835442e29afb38f',
+    notify_pending: false,
+    notify_confirmations: 1,
+    priority: 'default',
+    callbacks: []
+  }
+}
+Result in railway logs:
+Received payment data: /save-payment-blockbee?chatId=333&uuid=2d135cf7-979d-40c1-8abb-ce6b0a231a4a&address_in=0x8b0FcFEb867A735fF6270785B7A176FF7e8c13BE&address_out=0x9a7221b5e32d5f99e8da95585835442e29afb38f&confirmations=2&txid_in=0x18877e81add233ef72f49e229c8e0822f691c0ba04d83eaf55105ac2cdd20d54&txid_out=0x64187a4b701e890a6b6940bc51d559b68050d797f8fc811cc2c2155a00767723&fee=4908042936186995&fee_coin=0.004908042936186995&value=500000000000000000&value_coin=0.5&value_forwarded=485896250682512517&value_forwarded_coin=0.485896250682512517&coin=polygon_matic&price=0.5443885419&result=sent&pending=0
+
+
+REST API:
+https://api.blockbee.io
+/polygon/matic/create/?pending=0&confirmations=1&post=0&priority=default&multi_token=0&multi_chain=0&convert=0&apikey=M2ob6qm3RbB9JLAeHw2ynElH2LGGBMwVJocO0hfIfWk5gcyww77A8Lxo0xKQNRCc&callback=https%3A%2F%2Fsoftgreen.sbs%2Fsave-payment-blockbee
+
+{
+  "status": "success",
+  "address_in": "0xC9dDFC22c6D5D4aBa772E517b9621A5231ae6eb4",
+  "address_out": "0x9a7221b5e32d5f99e8da95585835442e29afb38f",
+  "callback_url": "https://softgreen.sbs/save-payment-blockbee",
+  "minimum_transaction_coin": "0.50000000",
+  "priority": "default"
+}
+
+
+
+Received payment data: /save-payment-blockbee?
+uuid=d6edb974-c836-420c-93d2-5039308572d9&amp;address_in=0xC9dDFC22c6D5D4aBa772E517b9621A5231ae6eb4&amp;
+address_out=0x9a7221b5e32d5f99e8da95585835442e29afb38f&amp;
+confirmations=2&amp;
+txid_in=0xd71dc53cbb766bcc157817901452c37d36ff5788884d3e1e10304170adb797b7&amp;
+txid_out=0xcdd9f5a09cb380a9e818fbc2816b21a6e5266c019d36424003d68b3270c18d35&amp;
+fee=4919438585441757&amp;
+fee_coin=0.004919438585441757&amp;
+value=500000000000000000&amp;
+value_coin=0.5&amp;
+value_forwarded=487024419958733963&amp;
+value_forwarded_coin=0.487024419958733963&amp;
+coin=polygon_matic
+&amp;price=0.5449608521
+&amp;
+result=sent&amp;
+pending=0
+
+
+
+Status: 200 OKTime: 2251msSize: 270 B
+Headers:
+Access-Control-Allow-Credentials:true
+Access-Control-Allow-Origin:*
+Cf-Cache-Status:DYNAMIC
+Cf-Ray:80149042bd4d9c67-IAD
+Connection:keep-alive
+Content-Encoding:br
+Content-Type:application/json
+Date:Mon04 Sep 2023 07:36:48 GMT
+Nel:{"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Referrer-Policy:same-origin
+Report-To:{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lQof8%2BxmD6dE2lKJvIFKuDRsO2jEl3m%2FnP%2FLsQPWT6ZEJT7NG47MuZ1yj8y47tSatbeqLQ%2FcTBmO7rZxxaWnEXCxxUvk4uPS45WjZGEVpDHZIzwUfUH4ejNhqs1mq7yjWw%3D%3D"}],"group":"cf-nel","max_age":604800}
+Server:cloudflare
+Transfer-Encoding:chunked
+Vary:originCookie
+X-Content-Type-Options:nosniff
+X-Final-Url:https://api.blockbee.io/polygon%2Fmatic/create/?apikey=M2ob6qm3RbB9JLAeHw2ynElH2LGGBMwVJocO0hfIfWk5gcyww77A8Lxo0xKQNRCc&callback=https%3A%2F%2Fsoftgreen.sbs%2Fsave-payment-blockbee&pending=0&confirmations=1&post=0&priority=default&multi_token=0&multi_chain=0&convert=0
+X-Frame-Options:SAMEORIGIN
+
+BTC blockbee.js
+{
+  address: '3AXuq4f2ahrdsbCopahDjsbeaXRuv9uvZy',
+  data: {
+    status: 'success',
+    callback_url: 'https://softgreen.sbs/save-payment-blockbee?chatId=4441',
+    address_in: '3AXuq4f2ahrdsbCopahDjsbeaXRuv9uvZy',
+    address_out: '1JH5TnZzjYTf1yYwBDLjWoHgkAcCHc1Do7',
+    notify_pending: false,
+    notify_confirmations: 1,
+    priority: 'default',
+    callbacks: []
+  }
+}
+
+BlockBee.getConvert 'btc', 10, 'usd'
+{
+  status: 'success',
+  value_coin: '0.00038837',
+  exchange_rate: '25748.6'
+}
+
+Received payment data:
+https://ourserver.com/save-payment-blockbee?
+uuid=ff7520b7-0ccc-4c36-a918-5b0f6bc0fca3&
+address_in=0xC9dDFC22c6D5D4aBa772E517b9621A5231ae6eb4&
+address_out=0x9a7221b5e32d5f99e8da95585835442e29afb38f&
+confirmations=2&
+txid_in=0x3740d602b9d87c5c7e9c8202299bdebc073398fe43960de569a4942dd275e0c5&
+txid_out=0xcfb1de602cdc81d6316bb6e336a90845170c326b0f31e1a2a47379b39aa01613&
+fee=5438534013054310&
+fee_coin=0.00543853401305431&
+value=553000000000000000&
+value_coin=0.553&
+value_forwarded=538414867292376690&
+value_forwarded_coin=0.53841486729237669&
+coin=polygon_matic&
+price=0.5068637291&
+result=sent&
+pending=0
+
+
+Data restored.
+Bot is running...
+Server is running on port 4005
+0xa1E6b8002C9d5652BA7f9Ad9C149e69274AC4136
+Debug /save-payment-blockbee?uuid=27304f0a-7949-4bfc-a78b-15dc3b8a33d4&
+address_in=0xa1E6b8002C9d5652BA7f9Ad9C149e69274AC4136&
+address_out=0x9a7221b5e32d5f99e8da95585835442e29afb38f&
+confirmations=3&
+txid_in=0x8f5c03566fb178fce6422c190888f466d34d8488b14fc41add6308575202d727&
+txid_out=0x9820307be3857676ca86c35d5b97b5550e921f1a5959b3bf1ac66234d27c66ec&
+fee=5447249723757732&
+fee_coin=0.005447249723757732&
+value=556000000000000000&
+value_coin=0.556&
+value_forwarded=539277722652015496&
+value_forwarded_coin=0.539277722652015496&
+coin=polygon_matic&
+price=0.504432622&
+result=sent&
+pending=0
+Backup created.  {
+  "state": {
+    "6687923716": {
+      "chosenPlanForPayment": "Daily"
+    },
+    "5729797630": {}
+  },
+  "linksOf": {},
+  "domainsOf": {},
+  "domainSold": {},
+  "planEndingTime": {}
+}
+
+{
+  "state": {
+    "6687923716": {
+      "chosenPlanForPayment": "Daily",
+      "cryptoPaymentSession": {
+        "priceCrypto": "0.55706",
+        "ticker": "polygon_matic"
+      }
+    },
+    "5729797630": {}
+  },
+  "linksOf": {},
+  "chatIdOf": {
+    "0xa1E6b8002C9d5652BA7f9Ad9C149e69274AC4136": 6687923716
+  },
+  "domainsOf": {},
+  "domainSold": {},
+  "planEndingTime": {}
+}

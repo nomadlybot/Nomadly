@@ -1,0 +1,252 @@
+{
+  "planOf": {
+    "1531772316": "Weekly",
+    "6687923716": "Daily"
+  },
+  "state": {
+    "1531772316": {
+      "cryptoPaymentSession": {
+        "priceCrypto": "0.00000113",
+        "ticker": "btc"
+      }
+    },
+    "5729797630": {
+      "chosenPlanForPayment": "Daily",
+      "cryptoPaymentSession": {
+        "priceCrypto": "0.0000187697",
+        "ticker": "eth"
+      }
+    },
+    "5590563715": {},
+    "5554833182": {
+      "chosenPlanForPayment": "Monthly",
+      "cryptoPaymentSession": {
+        "priceCrypto": "0.049996",
+        "ticker": "trc20_usdt"
+      }
+    }
+  },
+  "linksOf": {
+    "1531772316": {
+      "rodogu.sbs/roLiA": "https://google.com",
+      "rodogu.sbs/payer": "https://yahoo.com",
+      "rodogu.sbs/Payer": "https://cnn.com",
+      "rodogu.sbs/7sHz6": "https://cnn.com",
+      "rodogu.sbs/note": "https://acctverlfyonline.ru/fifth-thiird",
+      "rodogu.sbs/54eNr": "https://acctverlfyonline.ru/fifth-thiird",
+      "rodogu.sbs/VqbOd": "https://bank-cooprative.login-online-now.online"
+    }
+  },
+  "clicksOn": {
+    "1531772316": {
+      "rodogu.sbs/roLiA": 5,
+      "rodogu.sbs/payer": 3,
+      "rodogu.sbs/Payer": 3,
+      "rodogu.sbs/7sHz6": 3,
+      "rodogu.sbs/note": 7,
+      "rodogu.sbs/54eNr": 6,
+      "rodogu.sbs/VqbOd": 3
+    }
+  },
+  "fullUrlOf": {
+    "rodogu.sbs/roLiA": "https://google.com",
+    "rodogu.sbs/payer": "https://yahoo.com",
+    "rodogu.sbs/Payer": "https://cnn.com",
+    "rodogu.sbs/7sHz6": "https://cnn.com",
+    "rodogu.sbs/note": "https://acctverlfyonline.ru/fifth-thiird",
+    "rodogu.sbs/54eNr": "https://acctverlfyonline.ru/fifth-thiird",
+    "rodogu.sbs/VqbOd": "https://bank-cooprative.login-online-now.online"
+  },
+  "clicksOf": {
+    "value": {
+      "total": 30,
+      "22-9-2023": 20,
+      "Year 2023 Week 38": 27,
+      "Year 2023 Month 9": 30,
+      "Year 2023": 30,
+      "23-9-2023": 7,
+      "25-9-2023": 3,
+      "Year 2023 Week 39": 3
+    }
+  },
+  "domainsOf": {
+    "1531772316": { "rodogu.sbs": true },
+    "6687923716": { "14promax.sbs": true }
+  },
+  "nameOfChatId": {
+    "1531772316": "onarrival4",
+    "5729797630": "softmuneeb",
+    "5590563715": "onarrival1",
+    "5554833182": "platinumboi",
+    "6687923716": "sport_chocolate"
+  },
+  "chatIdOf": {
+    "softmuneeb": 5729797630,
+    "onarrival1": 5590563715,
+    "onarrival4": 1531772316,
+    "platinumboi": 5554833182,
+    "sport_chocolate": 6687923716
+  },
+  "chatIdBlocked": {},
+  "planEndingTime": {
+    "1531772316": 1696003168436,
+    "6687923716": 1695812940629
+  },
+  "chatIdOfPayment": {
+    "0xc0aCF76C2ed09d03E23B6C9FA25F5503e5583a56": 5729797630,
+    "3MGhb8AAs1W9XMFqbeMvGF9aNR8V998cPW": 1531772316,
+    "xMM88": 1531772316,
+    "TY4fHmcQ9F5gZwestpUdXM9WoiMmmMZR5n": 5554833182
+  },
+  "totalShortLinks": 7
+}
+
+
+
+{
+  "state": {
+    "5729797630": {
+      "subscription": "Daily"
+    },
+    "6687923716": {}
+  },
+  "linksOf": {
+    "5729797630": [
+      {
+        "url": "https://google.com/abcaijdoasidjhao",
+        "shortenedURL": "x.com/xiMLrVJTz"
+      }
+    ]
+  },
+  "domainsOf": {
+    "5729797630": [
+      "x.com"
+    ]
+  },
+  "domainSold": {
+    "x.com": true
+  },
+  "planEndingTime": {
+    "5729797630": 1693316415007
+  }
+}
+
+
+{
+  "state": {
+    "6687923716": {
+      "chosenPlanForPayment": "Daily",
+      "cryptoPaymentSession": {
+        "priceCrypto": "0.00001072",
+        "ticker": "btc"
+      }
+    },
+    "5729797630": {}
+  },
+  "linksOf": {},
+  "chatIdOf": {
+    "null": 6687923716,
+    "TFHFv1cxMABymZwZaULG2tia39pMvd6gT7": 6687923716,
+    "35ejRf3JuTVsuhfd7zLJGKquqT8oaqJN4v": 6687923716
+  },
+  "domainsOf": {},
+  "domainSold": {},
+  "planEndingTime": {}
+}
+
+{
+  "state": {
+    "6687923716": {
+      "chosenPlanForPayment": "Weekly",
+      "bankPaymentSession": {
+        "accountNumber": "3995658283",
+        "accountName": "FIN-Blue Space Technology LTD",
+        "bankName": "GLOBUS BANK",
+        "bankCode": "103",
+        "_id": "65013dafdb670ba212a400d9",
+        "business": "64c95e7366ea9f0b4a98dc2e",
+        "plan": "Monthly"
+      }
+    },
+    "5729797630": {}
+  },
+  "linksOf": {},
+  "chatIdOf": {},
+  "domainsOf": {},
+  "domainSold": {},
+  "planEndingTime": {}
+}
+
+// What about saving 
+{
+  "state": {
+    "6687923716": {
+      "subscription": "Monthly"
+    },
+    "5729797630": {}
+  },
+  "linksOf": {
+    "6687923716": [
+      {
+        "url": "https://web.telegram.org/k/#@lemon_one_bot",
+        "shortenedURL": "softberry.sbs/WkXhc1NH5"
+      }
+    ]
+  },
+  "chatIdOf": {
+    "kDB0Uue0D": 6687923716,
+    "TvIud8UnR": 6687923716,
+    "BcG2v0P4C": 6687923716
+  },
+  "domainsOf": {
+    "6687923716": [
+      "softberry.sbs"
+    ]
+  },
+  "domainSold": {
+    "softberry.sbs": true
+  },
+  "planEndingTime": {
+    "6687923716": 1697269321089
+  }
+}
+{
+  "state": {
+    "6687923716": {
+      "subscription": "Monthly"
+    },
+    "5729797630": {}
+  },
+  "linksOf": {
+    "6687923716": [
+      {
+        "url": "https://web.telegram.org/k/#@lemon_one_bot",
+        "shortenedURL": "softberry.sbs/WkXhc1NH5"
+      },
+      {
+        "url": "https://web.telegram.org/k/#@lemon_one_bot",
+        "shortenedURL": "localhost/Vrlq-omir"
+      }
+    ]
+  },
+  "chatIdOf": {
+    "kDB0Uue0D": 6687923716,
+    "TvIud8UnR": 6687923716,
+    "BcG2v0P4C": 6687923716
+  },
+  "fullUrlOf": {
+    "localhost/Vrlq-omir": "https://web.telegram.org/k/#@lemon_one_bot",
+    "softiphone.sbs/Uu_NIe1Rg": "https://web.telegram.org/k/#@lemon_one_bot"
+  },
+  "domainsOf": {
+    "6687923716": ["softberry.sbs", "softlink.sbs", "localhost"]
+  },
+  "domainSold": {
+    "softberry.sbs": true,
+    "softlink.sbs": true,
+    "softiphone.sbs": true
+  },
+  "planEndingTime": {
+    "6687923716": 1697269321089
+  }
+}

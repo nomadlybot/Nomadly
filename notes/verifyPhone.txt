@@ -1,0 +1,88 @@
+twilio {
+  callingCountryCode: '1',
+  countryCode: 'US',
+  phoneNumber: '+16465807362',
+  nationalFormat: '(646) 580-7362',
+  valid: true,
+  validationErrors: [],
+  callerName: { caller_name: null, caller_type: 'UNDETERMINED', error_code: null },
+  simSwap: null,
+  callForwarding: null,
+  liveActivity: null,
+  lineTypeIntelligence: null,
+  identityMatch: null,
+  reassignedNumber: null,
+  smsPumpingRisk: null,
+  phoneNumberQualityScore: null,
+  url: 'https://lookups.twilio.com/v2/PhoneNumbers/+16465807362'
+}
+
+validatePhoneAws('+16465807362') =>
+{
+  '$metadata': {
+    httpStatusCode: 200,
+    requestId: '6683a9ab-d068-47eb-912d-899489a0d2e5',
+    extendedRequestId: undefined,
+    cfId: 'rzooE8AVwkDVRU-UIuFXUdh078kQOihIrCitjA6vln656Bvkxoe4gw==',
+    attempts: 1,
+    totalRetryDelay: 0
+  },
+  NumberValidateResponse: {
+    CountryCodeIso2: 'US',
+    CountryCodeNumeric: '1',
+    Country: 'United States',
+    City: 'New York',
+    ZipCode: '10110',
+    County: 'New York',
+    Timezone: 'America/New_York',
+    CleansedPhoneNumberNational: '6465807362',
+    CleansedPhoneNumberE164: '+16465807362',
+    Carrier: 'Google (Grand Central) - SVR',
+    PhoneTypeCode: 2,
+    PhoneType: 'VOIP', // PhoneType: 'MOBILE', PhoneType: 'LANDLINE', PhoneType: 'INVALID',
+    OriginalPhoneNumber: '+16465807362'
+  }
+}
+
+validatePhoneNpl('+16465807362')=>
+[
+  {
+    carrier: 'BANDWIDTH.COM-NSR-10X/1',
+    countrycode: '1',
+    countryiso: 'US',
+    errorcode: '0',
+    errortext: 'OK',
+    landline: 'true',
+    localformat: '(646) 580-7362',
+    lrn: '6467416887',
+    mobile: 'false',
+    msisdn: '16465807362',
+    numbertype: 'LANDLINE',
+    ocn: '152725',
+    originalcarrier: 'BANDWIDTH.COM-NSR-10X/1',
+    originalocn: '152725',
+    originalspid: '152725',
+    ported: 'false',
+    reachable: 'undetermined',
+    spid: '152725',
+    timezone: 'America/New_York',
+    transactioncost: '1.00',
+    validnumber: 'undetermined'
+  }
+]
+
+neutrino
+{
+  valid: true,
+  country: 'United States',
+  'country-code': 'US',
+  'prefix-network': '',
+  'international-number': '+16465807362',
+  location: 'New York',
+  'local-number': '(646) 580-7362',
+  type: 'unknown',
+  'currency-code': 'USD',
+  'international-calling-code': '1',
+  'is-mobile': false,
+  'country-code3': 'USA'
+}

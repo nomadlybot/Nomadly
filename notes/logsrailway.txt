@@ -1,0 +1,421 @@
+async function getRailwayLogs() {
+  const GRAPHQL_QUERY = `query {
+  deploymentLogs(
+    deploymentId: "6a89fadb-fb8f-4d1d-9d77-e9fce807c644",
+    limit: 1000,
+    filter: {
+      OR: [
+        { message_contains: "keyword1" },
+        { message_contains: "keyword2" },
+        { message_contains: "keyword3" }
+      ]
+    }
+  ) {
+    message
+  }
+}`
+  const response = await axios.post(
+    GRAPHQL_ENDPOINT,
+    { query: GRAPHQL_QUERY },
+    {
+      headers: {
+        Authorization: `Bearer ${API_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+    },
+  )
+  const error = response?.data?.errors?.[0]?.message
+
+  log('getRailwayLogs')
+
+  if (error) {
+    log('Error query me', error)
+    return { error }
+  }
+
+  const logs = response.data.data.deploymentLogs
+
+  for (let i = 0; i < logs.length; i++) {
+    const l = logs[i]
+    log(l.message + '\n')
+  }
+
+  return response.data
+}
+// getRailwayLogs()
+
+
+Analytics Data:
+
+ Enter message Back,Cancel	to: 5590563715
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 💰 My Wallet,🔗 URL Shortener,🔍 View Analytics,🌐 Buy Domain Names,👀 My Domain Names,😎 DNS Management,📋 Subscribe Here,🔍 My Plan,🛠️ Get Support	to: 6049824137
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 6049824137
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ <b>Claim Your Corner of the Web!</b>  Please share the domain name you wish to purchase, like "abcpay.com". 	to: 6049824137
+
+ Confirm? Yes,No,Back,Cancel	to: 5590563715
+
+ Sent to all users 📈 View Analytics,👀 View Users,✋ Block User,👌 Unblock User,👋 Message all users	to: 5590563715
+
+ The price is $6. Would you like to apply a coupon code? If you have one, please enter it now. Otherwise, you can press 'Skip'. Skip,Back,Cancel	to: 
+ 
+
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 816807083
+
+ Price of auth04-logind.info is 6 USD. Choose payment method. Crypto,Bank ₦aira + Card🌐︎,💰 Wallet,Back,Cancel	to: 6049824137
+
+ Please choose a crypto currency BTC,LTC,ETH,USDT (TRon),USDT (ERC20),DOGE,Back,Cancel	to: 6049824137
+
+ Please remit 0.00017359 BTC to
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 6609317017
+
+ Wallet Balance:
+
+ Please select the domain you would like to connect with your shortened link. shorty2.sbs,blitly.sbs,shortpro.sbs,shotly.sbs,Back,Cancel	to: 816807083
+
+ Please select currency to deposit USD / NGN USD,NGN,Back,Cancel	to: 6609317017
+
+ Choose link type: Random Link,Custom Link,Back,Cancel	to: 816807083
+
+ Wallet Balance:
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 6687923716
+
+ Your shortened URL is: shorty2.sbs/dPtKf 	to: 816807083
+
+ Withdraw coming soon. Contact support @nomadly_private. Discover more @Nomadly. 	to: 6609317017
+
+ Enter message 	to: 5590563715
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 713359405
+
+ Confirm? 	to: 5590563715
+
+ Sent to all users 	to: 5590563715
+
+ User has Pressed Cancel Button. 	to: 6687923716
+
+ User has Pressed Back Button. 	to: 5080273733
+
+ Command not found. Press /start or Please contact support @nomadly_private. Discover more @Nomadly. 	to: 5080273733
+
+ Wallet Balance:
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ Wallet Balance:
+
+ User has Pressed Back Button. 	to: 6049824137
+
+ Wallet Balance:
+
+ Please select currency to deposit USD / NGN USD,NGN,Back,Cancel	to: 6049824137
+
+ Please enter USD Amount, note that minium value is $6: 	to: 6049824137
+
+ Please choose a crypto currency: BTC,LTC,ETH,USDT (TRon),USDT (ERC20),DOGE,Back,Cancel	to: 6049824137
+
+ Please remit 0.0002892 BTC to
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 6211594791
+
+ Your payment of 0.00021807 BTC ($7.53) is processed. Thank you for choosing us.
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.84 	to: 6049824137
+
+ Wallet Balance:
+
+ Wallet Balance:
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ <b>Claim Your Corner of the Web!</b>  Please share the domain name you wish to purchase, like "abcpay.com". 	to: 6049824137
+
+ The price is $17. Would you like to apply a coupon code? If you have one, please enter it now. Otherwise, you can press 'Skip'. Skip,Back,Cancel	to: 6049824137
+
+ Price of auth04-disabled.com is now $15.30 <s>($17)</s> Choose payment method. 	to: 6049824137
+
+ Please select currency to pay from your Wallet Balance:
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ <b>Claim Your Corner of the Web!</b>  Please share the domain name you wish to purchase, like "abcpay.com". 	to: 6049824137
+
+ The price is $6. Would you like to apply a coupon code? If you have one, please enter it now. Otherwise, you can press 'Skip'. Skip,Back,Cancel	to: 6049824137
+
+ Price of auth04-disabled.info is now $5.40 <s>($6)</s> Choose payment method. 	to: 6049824137
+
+ Please select currency to pay from your Wallet Balance:
+
+ Domain auth04-disabled.info is now yours. Please note that DNS updates can take up to 30 minutes. You can check your DNS update status here: https://www.whatsmydns.net/#A/auth04-disabled.info Thank you for choosing us.
+
+ Linking domain with your account... 	to: 6049824137
+
+ Your domain auth04-disabled.info is now linked to your account while DNS propagates. You will be updated automatically about the status momentarily.🚀 	to: 6049824137
+
+ Wallet Balance:
+
+ Here are your purchased domains:
+
+ Please select a domain if you wish to manage its DNS settings. auth04-disabled.info,Back,Cancel	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 713359405
+
+ Please select a domain if you wish to manage its DNS settings. auth04-disabled.info,Back,Cancel	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please select record type you want to add: CNAME Record,NS Record,A Record,Back,Cancel	to: 6049824137
+
+ Please provide CNAME record. i.e, abc.hello.org 	to: 6049824137
+
+ Please select record type you want to add: 	to: 6049824137
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 6382703954
+
+ Please provide A record. i.e, 108.0.56.98 	to: 6049824137
+
+ <b>Claim Your Corner of the Web!</b>  Please share the domain name you wish to purchase, like "abcpay.com". 	to: 6382703954
+
+ Record Added 	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ The price is $17. Would you like to apply a coupon code? If you have one, please enter it now. Otherwise, you can press 'Skip'. Skip,Back,Cancel	to: 6382703954
+
+ Please select a domain if you wish to manage its DNS settings. auth04-disabled.info,Back,Cancel	to: 6049824137
+
+ Please provide a valid URL. e.g https://google.com 	to: 713359405
+
+ Price of fastfedexdelivery.com is now $15.30 <s>($17)</s> Choose payment method. 	to: 6382703954
+
+ User has Pressed Cancel Button. 	to: 713359405
+
+ Please provide an email for payment confirmation. 	to: 6382703954
+
+ Bank ₦aira + Card 🌐︎ 	to: 6382703954
+
+ Please remit 15683 NGN by clicking “Make Payment” below. Once the transaction has been confirmed, you will be promptly notified, and your fastfedexdelivery.com domain will be seamlessly activated.
+
+ <b>Elevate Your Brand with Our Subscription Plans!</b>
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please select a domain if you wish to manage its DNS settings. auth04-disabled.info,Back,Cancel	to: 6049824137
+
+ User has Pressed Back Button. 	to: 6049824137
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 6049824137
+
+ User has Pressed Back Button. 	to: 6049824137
+
+ User has Pressed Back Button. 	to: 713359405
+
+ Please select a domain if you wish to manage its DNS settings. auth04-disabled.info,Back,Cancel	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.84 	to: 6049824137
+
+ Wallet Balance:
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please type the record id you wish to delete. i.e 3 	to: 6049824137
+
+ select valid option 	to: 6049824137
+
+ select valid option 	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please type the record id you wish to delete. i.e 3 	to: 6049824137
+
+ Are you sure? Yes or No 	to: 6049824137
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ Please contact support @nomadly_private. Discover more @Nomadly. 	to: 6049824137
+
+ Enter message 	to: 5590563715
+
+ Confirm? 	to: 5590563715
+
+ Sent to all users 	to: 5590563715
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.84 	to: 6049824137
+
+ Wallet Balance:
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 6049824137
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ Here are your purchased domains:
+
+ You have no shortened links yet. 	to: 6049824137
+
+ Here are your purchased domains:
+
+ Please select a domain if you wish to manage its DNS settings. auth04-disabled.info,Back,Cancel	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please select record type you want to add: 	to: 6049824137
+
+ Please provide A record. i.e, 108.0.56.98 	to: 6049824137
+
+ Record Added 	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please type the record id you wish to delete. i.e 3 	to: 6049824137
+
+ Are you sure? Yes or No 	to: 6049824137
+
+ Record Deleted 	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please select a domain if you wish to manage its DNS settings. auth04-disabled.info,Back,Cancel	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ Please type the record id you wish to delete. i.e 3 	to: 6049824137
+
+ Are you sure? Yes or No 	to: 6049824137
+
+ Record Deleted 	to: 6049824137
+
+ Here are DNS Records for auth04-disabled.info
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.83 	to: 6049824137
+
+ Wallet Balance:
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.85 	to: 6049824137
+
+ Wallet Balance:
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 698123469
+
+ Thank you for choosing Nomadly Bot! Please choose an option below: 	to: 5111375913
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 5111375913
+
+ Please select the domain you would like to connect with your shortened link. midqueen.com,trainedmax.sbs,alifreshgreen.sbs,cold-damper.com,shorty2.sbs,blitly.sbs,shortpro.sbs,shotly.sbs,Back,Cancel	to: 5111375913
+
+ Choose link type: 	to: 5111375913
+
+ Your shortened URL is: cold-damper.com/gU9m2 	to: 5111375913
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 5111375913
+
+ Please select the domain you would like to connect with your shortened link. midqueen.com,trainedmax.sbs,alifreshgreen.sbs,cold-damper.com,shorty2.sbs,blitly.sbs,shortpro.sbs,shotly.sbs,Back,Cancel	to: 5111375913
+
+ Choose link type: 	to: 5111375913
+
+ Your shortened URL is: shotly.sbs/qVxh7 	to: 5111375913
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 1822030911
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 1822030911
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 1822030911
+
+ <b>Claim Your Corner of the Web!</b>  Please share the domain name you wish to purchase, like "abcpay.com". 	to: 1822030911
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 6643430368
+
+ <b>Elevate Your Brand with Our Subscription Plans!</b>
+
+ User has Pressed Back Button. 	to: 6643430368
+
+ Wallet Balance:
+
+ Please select currency to deposit USD / NGN USD,NGN,Back,Cancel	to: 6643430368
+
+ Please enter NGN Amount: 	to: 6643430368
+
+ Please provide an email for payment confirmation 	to: 6643430368
+
+ Please remit 1000 NGN by clicking “Make Payment” below. Once the transaction has been confirmed, you will be promptly notified, and your wallet will updated.
+
+ Bank ₦aira + Card 🌐︎ 	to: 6643430368
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.85 	to: 6049824137
+
+ Wallet Balance:
+
+ Analytics Data:
+
+ Thank you for choosing Nomadly Bot! Please choose an option below: 	to: 5642150983
+
+ 📋 Subscribe first 	to: 5642150983
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 1531772316
+
+ Kindly share the URL that you would like shortened and analyzed. e.g https://cnn.com 	to: 1531772316
+
+ Please select the domain you would like to connect with your shortened link. plainote.sbs,holytrail.sbs,rosegold.sbs,shorty2.sbs,blitly.sbs,shortpro.sbs,shotly.sbs,Back,Cancel	to: 1531772316
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.86 	to: 6049824137
+
+ Wallet Balance:
+
+ Welcome to Nomadly! Enjoy our one-time free trial - shorten 2 URLs, active for 24 hours. Experience the Nomadly difference! 	to: 1049943692
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.88 	to: 6049824137
+
+ Wallet Balance:
+
+ User has Pressed Cancel Button. 	to: 6049824137
+
+ <b>Elevate Your Brand with Our Subscription Plans!</b>
+
+ User has Pressed Back Button. 	to: 6049824137
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.87 	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.87 	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.87 	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.87 	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.87 	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.87 	to: 6049824137
+
+ Wallet Balance:
+
+ You sent less money than expected so we credited amount received into your wallet. We expected $6 but recieved $3.87 	to: 6049824137
+
+ Wallet Balance:
+

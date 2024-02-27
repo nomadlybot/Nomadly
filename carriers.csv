@@ -1,0 +1,27 @@
+date, phone, npl, alcazar, aws
+2023-12-04 12:46:17, 14152401761, Cingular Wireless/2, NEW CINGULAR WIRELESS PCS LLC, AT&T Wireless
+2023-12-04 12:46:19, 14154700185, Verizon Wireless:6006 - SVR/2, CELLCO PARTNERSHIP DBA VERIZON WIRELESS - CA, Verizon Wireless
+2023-12-04 12:46:21, 14155325316, T-Mobile US-SVR-10X/2, T-MOBILE USA INC., T-Mobile USA Inc.
+2023-12-04 12:46:26, 12126580363, T-Mobile US-SVR-10X/2, OMNIPOINT COMMUNICATIONS INC. - NY, Sprint Spectrum L.P.
+2023-12-04 12:59:37, 18622039173, Sprint PCS-SVR-10X/2, OMNIPOINT COMMUNICATIONS INC. - NJ
+2023-12-04 12:46:23, 13109902195, CSCWirelessLLCdbaAlticeMobile-NSR/2, CSC WIRELESS LLC, CSC Wireless LLC
+2023-12-04 12:46:28, 14154219418, Sinch-Onvoy Spectrum-NSR-10X/2, ONVOY SPECTRUM LLC, Onvoy Spectrum LLC
+2023-12-04 12:46:32, 14154131508, IP Horizon-Port/4, IP HORIZON LLC, Fibernetics - SVR
+2023-12-04 12:46:34, 13057862886, DISH Wireless-10X-NSR/2, DISH WIRELESS LLC, Dish Wireless LLC
+2023-12-04 13:01:19, 18622919288, Metro PCS Communications Inc-SVR-10X/2, METROPCS INC.,
+
+
+  // rem cname from canada
+  // canda carriers
+  // carriers ok new zealand
+  // carriers UK Australia Send to
+  // carriers new zealand
+  //
+  // rem keyboard usd etc after
+
+  // debug
+  // cname going without asking to user
+  // locaal formatting giving international formatting
+
+  // carrier filtering for countries != US and costs communications left after deliverable
+
