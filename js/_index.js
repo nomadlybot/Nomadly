@@ -1297,7 +1297,7 @@ bot.on('message', async msg => {
     if (message === 'Back') return goto['domain-pay']()
     const tickerView = message
     const coin = tickerOf[tickerView]
-    const price = info?.price
+    const price = info?.couponApplied ? info?.newPrice : info?.price
     const domain = info?.domain
     if (!coin) return send(chatId, t.askValidCrypto)
 
@@ -2361,7 +2361,7 @@ app.get('/:id', async (req, res) => {
 })
 const startServer = () => {
   const port = process.env.PORT || 3000
-  app.listen(port, () => log(`Server ran away!\nhttp://localhost:${port}\nWaiting for db to connect...`))
+  app.listen(port, () => log(`Server ran away!\nhttp://localhost:${port}`))
 }
 
 
